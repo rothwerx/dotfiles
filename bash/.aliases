@@ -1,0 +1,5 @@
+alias hr="printf '%*s\n' \"${COLUMNS:-$(tput cols)}\" '' | tr ' ' -"
+
+if [ -f .aliases.local ]; then
+    . .aliases.local
+fi
